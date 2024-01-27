@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="iOSTitle.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:iOSTitle"
+    xmlns:pages="clr-namespace:iOSTitle.Pages"
+    Shell.FlyoutBehavior="Disabled"
+    Title="iOSTitle">
+
+    <TabBar>
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+        
+        <ShellContent
+            Title="First"
+            ContentTemplate="{DataTemplate pages:FirstPage}"
+            Route="FirstPage" />
+        
+        <ShellContent
+            Title="Second"
+            ContentTemplate="{DataTemplate pages:SecondPage}"
+            Route="SecondPage" />
+        
+    </TabBar>
+
+</Shell>
